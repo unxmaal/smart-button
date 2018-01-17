@@ -58,7 +58,7 @@ if os.getuid() != 0:
 
 GPIO.setmode(GPIO.BCM)
 
-GPIO.setup(BUTTON, GPIO.IN, pull_up_down=GPIO.PUD_UP)
+GPIO.setup(BUTTON, GPIO.IN, pull_up_down=GPIO.PUD_DOWN)
 
 if LONG_CMD != "" or SHORT_CMD != "":
   log("%s: listen on port %d" % (prg, BUTTON))
